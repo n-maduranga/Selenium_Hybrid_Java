@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Orange HRM Test" verbose="1" >
+
+    <listeners>
+       <!-- <listener class-name="main.java.com.crm.qa.ReportListener.ExtentReporterNG"/> -->
+
+    <listener class-name="com.orangehrm.qa.listener.ExtentReport"/>
+    </listeners>
+    <test name="FreeCRMAPlicationTest">
+        <classes>
+            <class name="com.orangehrm.qa.testcases.TC001_LoginPageTest"/>
+          <!--  <class name="main.java.test.com.crm.qa.HomePageTest"></class>
+            <class name="main.java.test.com.crm.qa.ContactPageTest"></class> -->
+        </classes>
+
+    </test>
+
+
+</suite>
