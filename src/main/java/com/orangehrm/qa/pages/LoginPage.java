@@ -5,10 +5,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 /**
+ * Author:Nuwan Maduranga
+ * Description:Here used Page Object Model framework concept and This class represents the login page and
+ * contains methods to interact with its elements.
  *
- * Page Factory - OR
  */
 public class LoginPage extends TestBase {
+
 
     public LoginPage(){
         PageFactory.initElements(driver,this);
