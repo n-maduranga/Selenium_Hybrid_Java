@@ -29,7 +29,8 @@ public class TC_003_PIMPageTest extends TestBase {
     @Test(priority = 1,description = "This test case will verify creating employee")
     public void verifyAddEmployee(){
         homePage.clickPIMLink();
-        pimPage.addEmployee();
+        pimPage.addEmployee("Ruwan","Saman","Terry");
+        log.info("Successfuly Added Employee");
 
     }
 

@@ -44,7 +44,7 @@ public class TestBase {
     public static Properties readConfigPropertyFile()  {
         try {
             Properties prop = new Properties();
-            FileInputStream file = new FileInputStream("C:\\Users\\JRC Software\\IdeaProjects\\Selenium_Hybrid_Java\\src\\main\\java\\com\\orangehrm\\qa\\config\\config.properties");
+            FileInputStream file = new FileInputStream("src/main/java/com/orangehrm/qa/config/config.properties");
             prop.load(file);
             return prop;
         }
