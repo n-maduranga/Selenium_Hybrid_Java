@@ -26,7 +26,7 @@ public class TC_003_PIMPageTest extends TestBase {
         loginPage = new LoginPage();
         pimPage= new PIMPage();
 
-        loginPage.loginToSystem("Admin","admin123");
+        loginPage.verifyloginToSystem("Admin","admin123");
     }
 
     //Read data from excel file

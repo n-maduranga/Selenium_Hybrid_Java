@@ -14,7 +14,7 @@ public class TestBase {
 
     //Here driver will be initialized. Browser name will be taken from property file
     public static void InitializeDriver(){
-        
+
         String browserName = readConfigPropertyFile().getProperty("browser");
 
         switch (browserName){
@@ -43,14 +43,15 @@ public class TestBase {
     //Read the property file
     public static Properties readConfigPropertyFile()  {
         try {
-            Properties prop = new Properties();
+            Properties propert = new Properties();
             FileInputStream file = new FileInputStream("src/main/java/com/orangehrm/qa/config/config.properties");
-            prop.load(file);
-            return prop;
+            propert.load(file);
+            return propert;
         }
         catch (Exception e){
             e.printStackTrace();
         }
+
         return null;
     }
 

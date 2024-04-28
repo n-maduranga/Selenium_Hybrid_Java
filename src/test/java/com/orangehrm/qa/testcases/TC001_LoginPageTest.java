@@ -22,7 +22,7 @@ public class TC001_LoginPageTest extends TestBase {
     @Test(priority = 1,description = "This will verify company logo")
     public void testLoginPageLogo() throws InterruptedException {
         log.info("*********************** Starting 1st Test Case **************");
-        boolean logo =loginPage.validateCompanyLogo();
+        boolean logo =loginPage.verifyCompanyLogo();
         Assert.assertTrue(logo);
         log.info("*********************** Ending 1st Test Case **************");
     }

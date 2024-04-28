@@ -30,13 +30,13 @@ public class LoginPage extends TestBase {
     public String validateLoginPageTitle(){
         return driver.getTitle();
     }
-    public boolean validateCompanyLogo() throws InterruptedException {
+    public boolean verifyCompanyLogo() throws InterruptedException {
         Thread.sleep(3000);
         return btnLogin.isDisplayed();
     }
 
     //When login to the system it will return HomePage
-    public HomePage loginToSystem(String UserName, String Password){
+    public HomePage verifyloginToSystem(String UserName, String Password){
         username.sendKeys(UserName);
         password.sendKeys(Password);
         btnLogin.click();

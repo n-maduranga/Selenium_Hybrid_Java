@@ -3,7 +3,6 @@ package com.orangehrm.qa.testcases;
 import com.orangehrm.qa.base.TestBase;
 import com.orangehrm.qa.pages.HomePage;
 import com.orangehrm.qa.pages.LoginPage;
-import com.orangehrm.qa.pages.UserManagementPage;
 import org.apache.log4j.Logger;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -19,7 +18,7 @@ public class TC002_HomePageTest extends TestBase {
         InitializeDriver();
         homePage = new HomePage();
         loginPage = new LoginPage();
-        loginPage.loginToSystem("Admin","admin123");
+        loginPage.verifyloginToSystem("Admin","admin123");
     }
     @Test(priority = 1,description = "This will test navigating to Usermanagement page")
     public void verifynavigateUserManagement(){
