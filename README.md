@@ -11,3 +11,5 @@ This is a sample Selenium-Java Framework designed for web automation testing. It
 
 ## Configuration
 The framework uses a properties file (config.properties) to manage configuration parameters such as URLs, browser options, timeouts, etc. You can modify these properties as per your requirements.
+## Acknowledgement
+This framework was developed with the assistance of various online resources, including YouTube tutorials. I acknowledge the valuable knowledge gained from these tutorials, which contributed to the creation of this framework.
