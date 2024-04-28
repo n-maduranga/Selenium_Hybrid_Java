@@ -14,7 +14,7 @@ public class TestBase {
 
     //Here driver will be initialized. Browser name will be taken from property file
     public static void InitializeDriver(){
-        //readConfigPropertyFile();
+        
         String browserName = readConfigPropertyFile().getProperty("browser");
 
         switch (browserName){
